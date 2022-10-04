@@ -17,9 +17,7 @@
       <!-- <img class="h-1/2 sm:h-1/3" :src="`../assets/svgs/edclogo.svg`" alt=""> -->
       <!-- <img class="h-1/2 sm:h-1/3" :src="`../assets/svgs/edclogo.svg`" alt=""> -->
       <!-- <img class="h-1/2 sm:h-1/3" :src="`../assets/venues/${venue}.svg`" alt=""> -->
-      <!-- <span>{{venue}}</span> -->
     </RouterLink>
-
   </div>
 </template>
 
