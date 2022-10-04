@@ -1,17 +1,27 @@
 <template>
   <div
-    class="bg-[#1da5fb] px-4 text-center h-[55px] flex items-center justify-center sm:hidden">
+    class="flex h-[55px] items-center justify-center bg-[#1da5fb] px-4 text-center sm:hidden">
     <h3>SIGN UP FOR OUR NEWSLETTER</h3>
   </div>
   <div class="bg-black p-6 text-white">
-    <div class="w-full flex justify-center sm:hidden">
-      <font-awesome-icon icon="fa-brands fa-facebook-square" class="mx-[10px] text-[30px]" />
-      <font-awesome-icon icon="fa-brands fa-twitter-square" class="mx-[10px] text-[30px]" />
-      <font-awesome-icon icon="fa-brands fa-instagram-square" class="mx-[10px] text-[30px]" />
-      <font-awesome-icon icon="fa-brands fa-twitch" class="mx-[10px] text-[30px]"/>
-      <font-awesome-icon icon="fa-brands fa-tiktok" class="mx-[10px] text-[30px]"/>
+    <div class="flex w-full justify-center sm:hidden">
+      <font-awesome-icon
+        icon="fa-brands fa-facebook-square"
+        class="mx-[10px] text-[30px]" />
+      <font-awesome-icon
+        icon="fa-brands fa-twitter-square"
+        class="mx-[10px] text-[30px]" />
+      <font-awesome-icon
+        icon="fa-brands fa-instagram-square"
+        class="mx-[10px] text-[30px]" />
+      <font-awesome-icon
+        icon="fa-brands fa-twitch"
+        class="mx-[10px] text-[30px]" />
+      <font-awesome-icon
+        icon="fa-brands fa-tiktok"
+        class="mx-[10px] text-[30px]" />
     </div>
-    <p class="text-center text-[10px] leading-3 my-4 lg:mb-5">
+    <p class="my-4 text-center text-[10px] leading-3 lg:mb-5">
       <span>ABOUT EDC WEEK</span>
       <span class="px-1 sm:px-2 lg:px-3">|</span>
       <span>CONTACT US</span>

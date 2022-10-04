@@ -1,36 +1,27 @@
 <template>
   <div
-    class="
-    bg-black uppercase h-fit p-5 font-black
-      sm:flex sm:justify-between"
-  >
+    class="h-fit bg-black p-5 font-black uppercase sm:flex sm:justify-between">
     <div class="flex">
       <RouterLink :to="`/event/${artist}`">
         <img
           :src="image"
-          class="
-            hidden h-[120px] w-[120px] object-scale-down
-            md:block
-            lg:h-[145px] lg:w-[145px]"
-        >
+          class="hidden h-[120px] w-[120px] object-scale-down md:block lg:h-[145px] lg:w-[145px]" />
       </RouterLink>
       <div class="leading-tight">
         <RouterLink :to="`/event/${artist}`">
-          <h2 class="text-[#1da5fb] text-[24px] w-fit lg:text-[32px] hover:text-[white] transition ease-in-out delay-75">{{ artist }}</h2>
+          <h2
+            class="w-fit text-[24px] text-[#1da5fb] transition delay-75 ease-in-out hover:text-[white] lg:text-[32px]">
+            {{ artist }}
+          </h2>
         </RouterLink>
         <RouterLink
-        :to="`/events/venue/${venue}`"
-        class="
-        text-white text-[15px]
-        hover:text-[#1da5fb] transition ease-in-out delay-75
-        lg:text-[20px]"
-        >
+          :to="`/events/venue/${venue}`"
+          class="text-[15px] text-white transition delay-75 ease-in-out hover:text-[#1da5fb] lg:text-[20px]">
           {{ venue }}
         </RouterLink>
         <RouterLink
-        :to="`/events/date/may-${date}`"
-        class="text-[#757575] text-[12px] lg:text-[15px]"
-        >
+          :to="`/events/date/may-${date}`"
+          class="text-[12px] text-[#757575] lg:text-[15px]">
           <p>{{ date }}</p>
           <p>{{ time }}</p>
         </RouterLink>
@@ -38,13 +29,20 @@
     </div>
 
     <div>
-      <a href="https://lasvegas.electricdaisycarnival.com/" target="_blank" class="text-white text-[11px] md:text-[14px]">
-        <div class="bg-[#1da5fb] px-[10px] py-[7px] w-[150px] text-center mb-2 hover:bg-[#fdb630] transition ease-in-out delay-75">
+      <a
+        href="https://lasvegas.electricdaisycarnival.com/"
+        target="_blank"
+        class="text-[11px] text-white md:text-[14px]">
+        <div
+          class="mb-2 w-[150px] bg-[#1da5fb] px-[10px] py-[7px] text-center transition delay-75 ease-in-out hover:bg-[#fdb630]">
           buy tickets
         </div>
       </a>
-      <RouterLink :to="`/event/${artist}`" class="text-white text-[11px] md:text-[14px]">
-        <div class="px-[10px] py-[7px] mb-2 w-[150px] text-center border-[#1da5fb] border-solid border-[1px] hover:bg-[#1da5fb] transition ease-in-out delay-75">
+      <RouterLink
+        :to="`/event/${artist}`"
+        class="text-[11px] text-white md:text-[14px]">
+        <div
+          class="mb-2 w-[150px] border-[1px] border-solid border-[#1da5fb] px-[10px] py-[7px] text-center transition delay-75 ease-in-out hover:bg-[#1da5fb]">
           more info
         </div>
       </RouterLink>

@@ -6,8 +6,20 @@ import './assets/main.css';
 import { menuItems, data, eventDays } from './data.js';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faFacebookSquare, faTwitterSquare, faInstagramSquare, faTwitch, faTiktok } from '@fortawesome/free-brands-svg-icons';
-library.add(faFacebookSquare, faTwitterSquare, faInstagramSquare, faTwitch, faTiktok);
+import {
+  faFacebookSquare,
+  faTwitterSquare,
+  faInstagramSquare,
+  faTwitch,
+  faTiktok
+} from '@fortawesome/free-brands-svg-icons';
+library.add(
+  faFacebookSquare,
+  faTwitterSquare,
+  faInstagramSquare,
+  faTwitch,
+  faTiktok
+);
 
 const app = createApp(App);
 

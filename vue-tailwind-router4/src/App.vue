@@ -5,12 +5,14 @@
     </nav>
   </header>
 
-  <RouterView class="mt-[80px] md:mt-[120px] lg:mt-[140px]" :key="$route.path"/>
+  <RouterView
+    class="mt-[80px] md:mt-[120px] lg:mt-[140px]"
+    :key="$route.path" />
 
   <footer>
-    <DatesListComponent/>
-    <TalentComponent/>
-    <VenuesComponent/>
+    <DatesListComponent />
+    <TalentComponent />
+    <VenuesComponent />
     <FooterComponent />
   </footer>
 </template>
