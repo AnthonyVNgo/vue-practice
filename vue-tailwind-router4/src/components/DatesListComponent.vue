@@ -1,25 +1,29 @@
 <template>
   <div
     id="dates"
-    class="bg-white px-4 text-center h-[30px] flex items-center justify-center sm:h-[40px] text-[16px] sm:text-[20px] md:text-[22px] lg:font-[400] lg:tracking-[-0.07em]">
+    class="flex h-[30px] items-center justify-center bg-white px-4 text-center text-[16px] sm:h-[40px] sm:text-[20px] md:text-[22px] lg:font-[400] lg:tracking-[-0.07em]">
     <h3>2022 DATES</h3>
   </div>
   <div
-    class="bg-black grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-7 sm:p-[15px]">
+    class="grid grid-cols-1 bg-black sm:grid-cols-4 sm:p-[15px] lg:grid-cols-7">
     <RouterLink
       :class="{ active: item.date.includes(date) }"
       v-for="item in items"
-      class="w-full border-[1px] border-black bg-[#252525] text-white flex justify-center items-center h-[61px] uppercase font-bold sm:h-[114px] md:h-[124px] lg:h-[174px] date-item"
+      class="date-item flex h-[61px] w-full items-center justify-center border-[1px] border-black bg-[#252525] font-bold uppercase text-white sm:h-[114px] md:h-[124px] lg:h-[174px]"
       :to="`/events/date/may-${item.date}`">
       <h3
         :class="{ active: item.date.includes(date) }"
-        class="uppercase font-extrabold h-fit text-[23px] tracking-normal sm:text-center sm:m-0 md:p-0">
-        <span class="sm:block sm:leading-[.8] sm:text-[18px] sm:tracking-tight lg:text-[20px]">{{
-          item.day
-        }}</span>
-        <span class="px-[6px] sm:block sm:leading-[.8] lg:leading-[.8] lg:text-3xl">{{ item.month }}</span>
+        class="h-fit text-[23px] font-extrabold uppercase tracking-normal sm:m-0 sm:text-center md:p-0">
         <span
-          class="sm:text-[2.8rem] sm:block sm:leading-[.8] sm:font-black lg:text-[50px]"
+          class="sm:block sm:text-[18px] sm:leading-[.8] sm:tracking-tight lg:text-[20px]"
+          >{{ item.day }}</span
+        >
+        <span
+          class="px-[6px] sm:block sm:leading-[.8] lg:text-3xl lg:leading-[.8]"
+          >{{ item.month }}</span
+        >
+        <span
+          class="sm:block sm:text-[2.8rem] sm:font-black sm:leading-[.8] lg:text-[50px]"
           :class="{
             yellow: item.date === '18',
             orange: item.date === '19',
@@ -123,12 +127,12 @@ const items = ref([
   color: white;
 }
 
-.date-item:hover span{
+.date-item:hover span {
   background-color: #1da5fb;
   color: white;
 }
 .date-item:hover {
   background-color: #1da5fb;
-  color: white
+  color: white;
 }
 </style>

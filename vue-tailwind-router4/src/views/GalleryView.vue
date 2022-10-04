@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-black grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+  <div class="grid grid-cols-1 bg-black sm:grid-cols-2 md:grid-cols-4">
     <div v-for="image in images">
-      <img :src="image"/>
+      <img :src="image" />
     </div>
   </div>
 </template>
@@ -28,5 +28,3 @@ export default {
   }
 };
 </script>
-
-<style scoped></style>
