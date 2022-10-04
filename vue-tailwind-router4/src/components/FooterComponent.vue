@@ -8,8 +8,8 @@
       <font-awesome-icon icon="fa-brands fa-facebook-square" class="mx-[10px] text-[30px]" />
       <font-awesome-icon icon="fa-brands fa-twitter-square" class="mx-[10px] text-[30px]" />
       <font-awesome-icon icon="fa-brands fa-instagram-square" class="mx-[10px] text-[30px]" />
-      <font-awesome-icon icon="fa-brands fa-twitch" class="mx-[10px] text-[30px]" />
-      <font-awesome-icon icon="fa-brands fa-tiktok" class="mx-[10px] text-[30px]" />
+      <font-awesome-icon icon="fa-brands fa-twitch" class="mx-[10px] text-[30px]"/>
+      <font-awesome-icon icon="fa-brands fa-tiktok" class="mx-[10px] text-[30px]"/>
     </div>
     <p class="text-center text-[10px] leading-3 my-4 lg:mb-5">
       <span>ABOUT EDC WEEK</span>
@@ -25,7 +25,3 @@
     </p>
   </div>
 </template>
-
-<script></script>
-
-<style scoped></style>

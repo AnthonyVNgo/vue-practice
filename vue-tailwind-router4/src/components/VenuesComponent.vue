@@ -13,10 +13,6 @@
       <!-- <img class="h-1/2 sm:h-1/3" :src="`../../public/assets/${venue}.svg`" alt=""> -->
       <!-- <img class="h-1/2 sm:h-1/3" :src="`../../assets/${venue}.svg`" alt=""> -->
       <img class="h-1/2 sm:h-1/3" :src="`../../src/assets/venues/${venue}.svg`" alt="">
-      <!-- <img class="h-1/2 sm:h-1/3" :src="`../../assets/venues/${venue}.svg`" alt=""> -->
-      <!-- <img class="h-1/2 sm:h-1/3" :src="`../assets/svgs/edclogo.svg`" alt=""> -->
-      <!-- <img class="h-1/2 sm:h-1/3" :src="`../assets/svgs/edclogo.svg`" alt=""> -->
-      <!-- <img class="h-1/2 sm:h-1/3" :src="`../assets/venues/${venue}.svg`" alt=""> -->
     </RouterLink>
   </div>
 </template>
@@ -26,5 +22,4 @@ import { ref, inject } from 'vue';
 import { useRoute } from 'vue-router';
 const data = inject('data');
 const venues = [...new Set(data.map(item => item.venue))].sort();
-console.log(venues);
 </script>
