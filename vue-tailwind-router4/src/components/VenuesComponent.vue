@@ -11,7 +11,10 @@
       :to="`/events/venue/${venue}`"
       class="w-full border-[2px] border-black bg-[#1e1e1e] text-white flex justify-center items-center h-[100px] md:h-[150px] lg:h-[170px] hover:bg-[#1da5fb] transition ease-in-out delay-75">
       <!-- <img class="h-1/2 sm:h-1/3" :src="`../../public/assets/${venue}.svg`" alt=""> -->
-      <img class="h-1/2 sm:h-1/3" :src="`../../assets/${venue}.svg`" alt="">
+      <!-- <img class="h-1/2 sm:h-1/3" :src="`../../assets/${venue}.svg`" alt=""> -->
+      <!-- <img class="h-1/2 sm:h-1/3" :src="`../../assets/venues/${venue}.svg`" alt=""> -->
+      <!-- <img class="h-1/2 sm:h-1/3" src="../assets/svgs/edclogo.svg" alt=""> -->
+      <img class="h-1/2 sm:h-1/3" :src="`../assets/venues/${venue}.svg`" alt="">
     </RouterLink>
 
   </div>
