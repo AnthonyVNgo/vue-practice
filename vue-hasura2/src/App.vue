@@ -1,6 +1,13 @@
 <template>
   <div>
-    {{ result }}
+    <p v-if="error">Something went wrong...</p>
+    <p v-if="loading">Loading...</p>
+    <p
+      v-else
+      v-for="character in result.characters.results"
+      :key="character.id">
+      {{ character.name }}
+    </p>
   </div>
 </template>
 
@@ -8,19 +15,7 @@
 import gql from 'graphql-tag';
 import { useQuery } from '@vue/apollo-composable';
 
-// const CHARACTERS_QUERY = gql`
-//   query Characters {
-//     characters {
-//       results {
-//         id
-//         name
-//         image
-//       }
-//     }
-//   }
-// `;
-
-const { result } = useQuery(gql`
+const { result, loading, error } = useQuery(gql`
   query Characters {
     characters {
       results {
