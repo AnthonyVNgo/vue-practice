@@ -1,5 +1,4 @@
 <template>
-  <!-- <div v-if="users.loading"></div> -->
   <div>
     {{ result }}
   </div>
@@ -21,7 +20,6 @@ import { useQuery } from '@vue/apollo-composable';
 //   }
 // `;
 
-// const { result, loading, error } = useQuery(CHARACTERS_QUERY);
 const { result } = useQuery(gql`
   query Characters {
     characters {
@@ -33,8 +31,6 @@ const { result } = useQuery(gql`
     }
   }
 `);
-
-console.log(result.value);
 </script>
 
 <style scoped></style>
