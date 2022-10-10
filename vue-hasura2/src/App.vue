@@ -16,7 +16,7 @@ import gql from 'graphql-tag';
 import { useQuery } from '@vue/apollo-composable';
 
 const { result, loading, error } = useQuery(gql`
-  query Characters {
+  query getCharacters {
     characters {
       results {
         id

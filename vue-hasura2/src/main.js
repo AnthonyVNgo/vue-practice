@@ -1,4 +1,4 @@
-import { createApp, provide, h } from 'vue';
+import { createApp } from 'vue';
 import { DefaultApolloClient } from '@vue/apollo-composable';
 import App from './App.vue';
 import {
@@ -18,12 +18,6 @@ const apolloClient = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-// createApp(App).mount('#app');
-// const app = createApp({
-createApp({
-  setup() {
-    provide(DefaultApolloClient, apolloClient);
-  },
-
-  render: () => h(App)
-}).mount('#app');
+const app = createApp(App);
+app.provide(DefaultApolloClient, apolloClient);
+app.mount('#app');
